@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BNITS'Valentine</title>
 </head>
+<!--Css externo -->
+<link rel="stylesheet" href="css/style.css">
 <!--CSS local-->
 <style>
     html,body{
@@ -16,10 +18,11 @@
 /*Id generico para objetos com forma e preenchimento*/
 .topo{
     width:100%;
-    height:20%;
+    height:40%;
     background-color:firebrick;
     text-align:center;
 }
+
 #conteudo {
             width:100%;
             height:74%;
@@ -29,8 +32,9 @@
         
 #conteudo h2{
             color: white;
-            font-family:monospace;
+            font-family:italic;
             font-size: 40px;
+
         }
 
 
@@ -42,28 +46,57 @@
             align-items: center;/* Centraliza verticalmente */
             margin-left: auto; /* Move a imagem para a direita */
         }
+        .linha {
+            display: flex;
+        }
+
+        .coluna {
+            width: 33%;
+            padding: 30px;
+        }
+        
 .rodape{
     width:100%;
-    height:2%;
+    height:5%;
+    padding-top:4px;
+    margin-bottom:auto;
     background-color: plum;
     text-decoration-color: azure;
 }
 
 </style>
 <body>
-    <div class="topo">
+    <div class="topo bg1">
         <img src=""class="imglogo">
-        <h1>Valentines'day</h1>
+        <h1 class="paragrafo">Valentine's day</h1>
     </div>
-    <div id="conteudo">
+    <div id="conteudo"> 
         <h2>The Valentine day 2024</h2>
         
         <p></p>
-    <img src="img/valentines-day-10741_512.gif" id="imgconteudo">
-        </div>   
+        <div class="linha">
+            <!--coluna da esquerda-->
+                <div class="coluna">
+                <p class="paragrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam repellendus fugit, qui ipsam nihil molestiae pariatur quam iusto facere repellat ullam expedita mollitia maxime aut et reprehenderit debitis delectus maiores?</p>
+    
+                </div>
+    
+            <!--coluna do meio-->
+                <div>
+                    <img src="img/valentines-day-10539_256.gif" alt="">
+                </div>
+            <!--coluna da direita-->
+                <div class="coluna">
+                
+                </div>
+            </div>
+            <img src="img/valentines-day-10741_512.gif" id="imgconteudo">
+        </div>
+    </div>   
+
     
     <div class="rodape">
-        <p><a href="https://youtube">Design For BNITS</a> - Copyrigths © 2024.</p>
+        <p class="paragrafo"><a href="https://youtube">Design For BNITS</a> - Copyrigths © 2024.</p>
     </div>
     
     
