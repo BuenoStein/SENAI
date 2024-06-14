@@ -7,12 +7,13 @@
 }
 .paragrafo{
     font-family:"Sacramento", cursive;
-    
     color:white;
+    font-size:32px;
 }
 .titulo{
     font-family:"Shantell Sans", cursive; 
     color:white;
+    font-size:120px;
 
    
 }
@@ -20,4 +21,19 @@
     font-family:"Podkova", serif;
     color:white;
 
+}
+
+.imgMeuAmor{
+    height:100%;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
 }
