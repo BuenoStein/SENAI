@@ -1,5 +1,5 @@
 
-![Imagem SENAI](https://github.com/BuenoStein/SENAI/assets/121113359/af42dc5d-1bbf-49db-809c-63e445e3acbb)
+![Imagem Senai grande](https://github.com/BuenoStein/SENAI/assets/121113359/6131f119-5b87-412a-bb8e-85ea7db17f25)
 
 <h1># SENAI - FRONT END</h1>
 
