@@ -4,7 +4,7 @@
   <img src="https://github.com/BuenoStein/SENAI/assets/121113359/9b19b88d-9c84-4e19-aeba-fadc4fff6b94" alt="SENAI">
   <h1>Front-end</h1>
 </div>
-
+---
 
 ## Sumário
 - [Sobre](#sobre)
