@@ -1,5 +1,6 @@
 <div align="center">
-![Imagem Senai grande](https://github.com/BuenoStein/SENAI/assets/121113359/6131f119-5b87-412a-bb8e-85ea7db17f25)
+<img src="https://github.com/BuenoStein/SENAI/assets/121113359/9b19b88d-9c84-4e19-aeba-fadc4fff6b94" alt="SENAI">
+
 
 <h1># SENAI - FRONT END</h1>
 </div>
