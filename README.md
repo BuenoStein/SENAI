@@ -79,4 +79,4 @@ Este projeto está licenciado sob <a href="LICENSE">Licença Customizada</a>
 
 - *Nome:* Igor de Souza Bueno
 - *Email:* igorsbueno010@gmail.com
-- *LinkedIn:* [](https://www.linkedin.com/in/igor-de-souza-3b0b67267/)
+- *LinkedIn:* [My](https://www.linkedin.com/in/igor-de-souza-3b0b67267/)
