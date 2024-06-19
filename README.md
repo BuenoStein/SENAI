@@ -11,9 +11,18 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Rodar os Projetos](#como-rodar-os-projetos)
 - [Projetos](#projetos)
-- [Contribuições](#contribuições)
 - [Licença](#licença)
 - [Contato](#contato)
+
+## Sobre
+
+Esse Repositório tem o intuito de aguardar as aulas e salvar oque foi se aprendido durante cada aula, ao final do curso pretendo fazer um Projeto de conclusão do curso para Analisar o que se estudado durante o curso inteiro.
+
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+(Por enquanto só essas duas)
 
 
 ## Como Rodar os Projetos
@@ -39,3 +48,23 @@ Para rodar esses projetos na sua máquina, siga os passos abaixo:
    ```bash
    npm start
    ```
+## Projetos
+
+### Projeto 1 - Estou Analizando  
+Como está no incio o curso não sei que tipo de projeto seria capaz de fazer então só vou deixar feito essa aba "Projetos"
+Mas acho que pretendo fazer o meu Portfólio como Inicio.
+
+### Projeto 2 - Um Projeto em grupo
+Pretendo ter um projeto em grupo até o final do curso para que eu possa analisar a minha capacidade de trabalhar com mais pessoas,
+assim ao final do projeto dando um feedback de como foi fazer e etc.
+
+
+## Licença
+Este projeto está licenciado sob <a href="LICENSE">Licença Customizada</a>   
+
+
+## Contato
+
+- *Nome:* Igor de Souza Bueno
+- *Email:* igorsbueno010@gmail.com
+- *LinkedIn:* [](https://www.linkedin.com/in/igor-de-souza-3b0b67267/)
