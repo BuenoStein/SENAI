@@ -1,61 +1,72 @@
-/* fontes do google */
-html,body{
-    margin:0;
-    padding:0;
-    height:0;
-}
-/* Tags-Class-IDS */
-.container{
+/*fonts do google*/
 
-    width:80%;
-    margin:0 auto;
-    padding:25px;
-    background-color: aquamarine;
+/*Tags*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-.container-fluid{
- /* 100% largura da pagina */
-    width:100%;
-    height:30%;
-    padding:25px; 
+/*Class, IDs*/
+.container {
+    /*80% da largura da pagina centralizada*/
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color:cadetblue;
 }
-.row{
+
+.container-fluid {
+    /*100% da largura da pagina*/
+    width: 100%;
+    height: 30%;
+    padding: 25px;
+}
+
+.row {
     display: flex;
 }
-.col1{
-    width:33%;
-    padding:20px;
-}
-.col2{
-    width:50%;
-    padding:20px;
-}
-.col3{
-    width:25%;
-    padding:10px;
 
+.col1 {
+    width: 33%;
+    padding: 20px;
 }
-.imgTopo{
+
+.col2 {
+    width: 50%;
+    padding: 20px;
+}
+
+.col3 {
+    width: 25%;
+    padding: 10px;
+}
+
+.imgTopo {
     background-image:url(../img/ai-generated-8820543_1920.png);
-    background-position:bottom center;
-    background-repeat:no-repeat;
-    /* cover é um ajuste na tela */
-    background-size:cover; 
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    color:blueviolet;
+    color: #ffffff;
     padding-bottom: 150px;
-    padding-top:150px;
+    padding-top: 150px;
     text-align: center;
 }
-.imgRodape{
+
+.imgRodape {
     background-image:url(../img/dark-1850684_1920.jpg);
-    background-position:center;
-    background-repeat:no-repeat;
-    /* cover é um ajuste na tela */
-    background-size:cover; 
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    color:blueviolet;
+    color: #ffffff;
     padding-bottom: 150px;
-    padding-top:150px;
+    padding-top: 150px;
     text-align: center;
+}
+
+img{
+    width: 100%;
 }
