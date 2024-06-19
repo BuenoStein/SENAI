@@ -14,15 +14,21 @@
 - [Licença](#licença)
 - [Contato](#contato)
 
+
+
 ## Sobre
 
 Esse Repositório tem o intuito de aguardar as aulas e salvar oque foi se aprendido durante cada aula, ao final do curso pretendo fazer um Projeto de conclusão do curso para Analisar o que se estudado durante o curso inteiro.
+
+
 
 ## Tecnologias Utilizadas
 
 - HTML
 - CSS
 (Por enquanto só essas duas)
+
+
 
 
 ## Como Rodar os Projetos
@@ -48,6 +54,8 @@ Para rodar esses projetos na sua máquina, siga os passos abaixo:
    ```bash
    npm start
    ```
+
+
 ## Projetos
 
 ### Projeto 1 - Estou Analizando  
@@ -59,8 +67,12 @@ Pretendo ter um projeto em grupo até o final do curso para que eu possa analisa
 assim ao final do projeto dando um feedback de como foi fazer e etc.
 
 
+
+
 ## Licença
 Este projeto está licenciado sob <a href="LICENSE">Licença Customizada</a>   
+
+
 
 
 ## Contato
