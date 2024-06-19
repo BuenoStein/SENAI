@@ -11,7 +11,7 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Rodar os Projetos](#como-rodar-os-projetos)
 - [Projetos](#projetos)
-- [Licença](#licença)"
+- [Licença](#licença)
 - [Contato](#contato)
 
 
