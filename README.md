@@ -18,7 +18,7 @@
 
 ## Sobre
 
-Esse Repositório tem o intuito de aguardar as aulas e salvar oque foi se aprendido durante cada aula, ao final do curso pretendo fazer um Projeto de conclusão do curso para Analisar o que se estudado durante o curso inteiro.
+Esse Repositório tem o intuito de guardar as aulas e salvar oque foi se aprendido durante cada aula, ao final do curso pretendo fazer um Projeto de conclusão do curso para Analisar o que se estudado durante o curso inteiro.
 
 
 
