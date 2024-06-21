@@ -6,6 +6,8 @@ html, body{
     padding:0;
     margin:0;
     height:100%;
+    background-color:rgb(31, 31, 31);
+    color: aliceblue;
 }
 
 a{
@@ -22,30 +24,43 @@ nav ul li{
     margin-right: 10px;
     
 }
-.h1topo{
-    padding-left:20px;
+.h1Firebase{
+    padding-left:310px;
     padding-right:0px;
+    color: aliceblue;
+    font-size: 100px;
+    font-display:initial;
+    padding-bottom:20px; 
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    
 }
 /* Classes do projeto */
 .topo{
     width:100%;
     height:35%;
     padding:0px;
-    background-color:black;
-    color:white;
+    position: relative;
+}
+.imageTopo{
+    display: flex;
+    
 }
 .conteudo{
     font-family: "Questrial";
     width:80%;
     padding:20px;
     margin:0 auto;
-    background-color: gray;
+    /* background-image: url(../img/brq_google-firebase-2.webp);
+    background-size: auto;
+    background-repeat: no-repeat; */
 }
 .rodape{
     width:100%;
     height:35%;
     padding:0px;
-    background-color:black;
+    /* background-color:black; */
     color: white;
 }
 .row{
@@ -56,7 +71,8 @@ nav ul li{
     
 }
 .litopo{
-    padding-left:300px;
+    /* padding-left:300px;
+    text-align: left; */
     
 }
 .menu{
