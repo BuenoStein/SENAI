@@ -13,151 +13,172 @@
         Lista Ordenada: <ol></ol>
     -->
 
-<body>
-    <!-- Topo da Página -->
-    <div class="topo">
-        <nav class="row">
-            <img src="img/firebase.gif" alt="complicado" class="imageTopo">
-            <h1 class="h1Firebase">Firebase</h1>
-            <ul>
-                <li class="litopo"><a href="#servicos">Serviços</a></li>
-                <li class="litopo"><a href="#Node.js">Node.js</a></li>
-                <li class="litopo"><a href="#Hospedagem">Hospedagem</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Conteúdo da Página -->
-    <div class="conteudo">
-
-        <section>
-            <h1>Firebase: Uma Plataforma Poderosa para Desenvolvimento de Aplicações</h1>
-            <p>Nos últimos anos, Firebase emergiu como uma das plataformas mais populares para desenvolvimento de
-                aplicativos móveis e web, oferecendo uma gama robusta de serviços integrados na nuvem. Originalmente
-                adquirida pelo Google em 2014, Firebase evoluiu significativamente para se tornar uma solução abrangente
-                para desenvolvedores que buscam construir, melhorar e escalar seus aplicativos de maneira eficiente e
-                com pouca complexidade.</p>
-            <h2>O que é Firebase?</h2>
-            <p>Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web que fornece uma variedade de
-                serviços que ajudam os desenvolvedores a criar e gerenciar seus aplicativos, desde o desenvolvimento
-                inicial até a distribuição e análise de uso. Essa plataforma permite que desenvolvedores foquem no
-                desenvolvimento de funcionalidades principais do aplicativo, enquanto o Firebase cuida de grande parte
-                da infraestrutura necessária para suportar essas funcionalidades</p>
-        </section>
-        <section id="servicos">
-            <!-- Serviços do Firebase -->
-            <h2>Principais Serviços do Firebase</h2>
-            <ul>
-                <li>Firestore: Um banco de dados NoSQL em tempo real que permite armazenar e sincronizar dados entre
-                    clientes em tempo real. É ideal para aplicativos que requerem dados em tempo real e sincronização
-                    offline</li><br>
-                <li>Authentication: Gerenciamento completo de autenticação de usuários, com suporte para autenticação
-                    por e-mail/senha, redes sociais como Google, Facebook, Twitter, entre outros, além de autenticação
-                    anônima.</li><br>
-                <li>Cloud Firestore: Uma base de dados de documentos NoSQL que permite armazenar, sincronizar e
-                    consultar dados para seus aplicativos móveis e web.</li><br>
-                <li>Storage: Armazenamento de arquivos na nuvem, ideal para imagens, vídeos ou outros conteúdos que
-                    precisam ser acessados rapidamente pelos usuários.</li><br>
-                <li>Cloud Functions: Permite escrever funções backend sem precisar gerenciar servidores. Funciona com
-                    eventos gerados pelos serviços do Firebase, como autenticação ou alterações no banco de dados</li>
-                <br>
-                <li>Hosting: Hospedagem de conteúdo estático e dinâmico diretamente nos servidores do Firebase, com SSL
-                    gratuito, permitindo a implantação rápida de aplicações web.</li><br>
-                <li>Cloud Messaging: Envio de mensagens e notificações para dispositivos móveis e web, integrando-se
-                    facilmente com outros serviços do Google, como o Firebase Analytics.</li><br>
-                <li>Analytics: Fornece insights detalhados sobre o uso do aplicativo, incluindo dados de usuários,
-                    eventos e conversões, ajudando a entender melhor o comportamento dos usuários e otimizar a
-                    experiência do aplicativo</li><br>
-                <li>Performance Monitoring: Monitoramento do desempenho do aplicativo em tempo real, identificando
-                    problemas de desempenho e otimizando o desempenho geral do aplicativo.</li><br>
-                <li>Remote Config: Permite ajustar a aparência e o comportamento do aplicativo sem precisar lançar uma
-                    atualização, com base em variáveis definidas pelo desenvolvedor.</li><br>
-                <li>Machine Learning: Integração com o Google Cloud Machine Learning para implementar funcionalidades
-                    avançadas de aprendizado de máquina nos aplicativos Firebase.</li><br>
-            </ul>
-
-        </section>
-        <section id="Node.js">
-            <h1>Node.js e Hospedagem de Página no Firebase</h1>
-            <p>Node.js e Firebase são duas tecnologias poderosas que, quando combinadas, oferecem uma plataforma
-                flexível e eficiente para o desenvolvimento e hospedagem de aplicações web modernas. Neste artigo,
-                exploraremos o papel do Node.js no contexto do Firebase e como você pode usar essas ferramentas para
-                hospedar uma página web de forma simples e eficaz.</p>
-            <h2>O que é Node.js?</h2>
-            <p>Node.js é um ambiente de execução JavaScript construído sobre o motor V8 do Google Chrome. Ele permite
-                que os desenvolvedores usem JavaScript tanto no frontend quanto no backend, unificando o desenvolvimento
-                de aplicativos web. Node.js é conhecido por sua capacidade de lidar com operações de entrada e saída de
-                forma não bloqueante e eficiente, o que o torna ideal para aplicações em tempo real e escaláveis.</p>
-
-        </section>
-        <section>
-            <h1>Usando Node.js para Hospedar uma Página no Firebase</h1>
-            <ol>
-                <li>Instalação do Firebase CLI: Primeiramente, você precisa instalar o Firebase Command Line Interface
-                    (CLI),
-                    que permite interagir com os serviços Firebase diretamente do seu terminal. Você pode instalá-lo via
-                    npm
-                    (Node Package Manager) usando o seguinte comando:</li><br>
-
-                <li>Configuração do Firebase: Após a instalação, você precisa fazer login na sua conta do Google e
-                    iniciar um
-                    novo projeto Firebase (caso ainda não tenha um). Use o comando abaixo e siga as instruções para
-                    autenticar e
-                    configurar seu projeto:</li><br>
-
-                <li>Durante o processo de inicialização (firebase init), você será solicitado a escolher os serviços que
-                    deseja
-                    configurar. Certifique-se de selecionar o Firebase Hosting.</li><br>
-                <li> Preparação do Projeto: Após a inicialização, você terá uma estrutura básica de diretórios do
-                    Firebase.
-                    Coloque os arquivos estáticos do seu site (HTML, CSS, JavaScript, imagens, etc.) na pasta public
-                    criada pelo
-                    Firebase CLI.</li><br>
-
-                <li> Deploy do Projeto: Para implantar seu site, basta executar o seguinte comando no diretório do
-                    projeto
-                    onde está o arquivo firebase.json:</li><br>
-                </ol>
-
-                <p>Isso fará o upload dos arquivos do seu site para os servidores do Firebase Hosting e tornará sua
-                    página
-                    acessível através de um subdomínio do firebaseapp.com ou um domínio personalizado configurado por
-                    você.
-                    Benefícios da Combinação Node.js e Firebase</p><br>
-                <ul><li>• Simplicidade e Facilidade de Uso: Ambos Node.js e Firebase são conhecidos por sua simplicidade e
-                facilidade de uso, permitindo que desenvolvedores se concentrem mais na lógica do aplicativo do que na
-                configuração de infraestrutura.</li>
-                <li>• Escalabilidade e Desempenho: Node.js é altamente escalável, e o Firebase Hosting oferece uma
-                infraestrutura de hospedagem rápida e confiável, garantindo desempenho consistente mesmo com picos de
-                tráfego.</li>
-                <LI>• Integração com Serviços Firebase: Além de hospedagem, você pode integrar facilmente outros serviços
-                Firebase, como autenticação de usuários, banco de dados em tempo real (Firestore), funções na nuvem
-                (Cloud
-                Functions), entre outros, para expandir a funcionalidade do seu aplicativo conforme necessário.</LI>
-            </ul>
-        </section>
-
-    </div>
-    <!-- Conteúdo do Rodapé -->
-    <div class="rodape">
-        <div class="row">
-            <div class="col">
-                <h1>Logo</h1>
-            </div>
-            <div class="col">
-                <h3>Mapa da pagina</h3>
+    <body>
+        <!-- Topo da Página -->
+        <div class="topo">
+            <nav class="row">
+                <img src="img/firebase.gif" alt="complicado" class="imageTopo">
+                <h1 class="h1Firebase">Firebase</h1>
                 <ul>
-                    <li>Serviços</li>
-                    <li>Node.js</li>
-                    <li>Hospedagem</li>
+                    <li class="litopo"><a href="#servicos">Serviços</a></li>
+                    <li class="litopo"><a href="#Node.js">Node.js</a></li>
+                    <li class="litopo"><a href="#Hospedagem">Hospedagem</a></li>
                 </ul>
+            </nav>
+        </div>
+
+        <!-- Conteúdo da Página -->
+        <div class="conteudo1">
+
+            <section>
+                <div class="row">
+                    <div class ="colconteudo1">
+                        <h2 class="titulos">O que é Firebase?</h2>
+                                <p>Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web que fornece uma variedade de
+                                serviços que ajudam os desenvolvedores a criar e gerenciar seus aplicativos, desde o desenvolvimento
+                                inicial até a distribuição e análise de uso. Essa plataforma permite que desenvolvedores foquem no
+                                desenvolvimento de funcionalidades principais do aplicativo, enquanto o Firebase cuida de grande parte
+                                da infraestrutura necessária para suportar essas funcionalidades</p>
+                    
+                        <h1 class="titulos">Firebase: Uma Plataforma Poderosa para Desenvolvimento de Aplicações</h1>
+                                <p>Nos últimos anos, Firebase emergiu como uma das plataformas mais populares para desenvolvimento de
+                            aplicativos móveis e web, oferecendo uma gama robusta de serviços integrados na nuvem. Originalmente
+                            adquirida pelo Google em 2014, Firebase evoluiu significativamente para se tornar uma solução abrangente
+                            para desenvolvedores que buscam construir, melhorar e escalar seus aplicativos de maneira eficiente e
+                            com pouca complexidade.</p>    
+                            </div>
+                    
+                        <div class="col1">
+                            <img src="img/fire-flame.gif" alt="">
+                        </div>
+                    </div>
+                        <section id="servicos">
+                            <!-- Serviços do Firebase -->
+                                
+                            <h2 class="titulos">Principais Serviços do Firebase</h2>
+                            <ul>
+                                <li>Firestore: Um banco de dados NoSQL em tempo real que permite armazenar e sincronizar dados entre
+                                    clientes em tempo real. É ideal para aplicativos que requerem dados em tempo real e sincronização
+                                    offline</li><br>
+                                <li>Authentication: Gerenciamento completo de autenticação de usuários, com suporte para autenticação
+                                    por e-mail/senha, redes sociais como Google, Facebook, Twitter, entre outros, além de autenticação
+                                    anônima.</li><br>
+                                <li>Cloud Firestore: Uma base de dados de documentos NoSQL que permite armazenar, sincronizar e
+                                    consultar dados para seus aplicativos móveis e web.</li><br>
+                                <li>Storage: Armazenamento de arquivos na nuvem, ideal para imagens, vídeos ou outros conteúdos que
+                                    precisam ser acessados rapidamente pelos usuários.</li><br>
+                                <li>Cloud Functions: Permite escrever funções backend sem precisar gerenciar servidores. Funciona com
+                                    eventos gerados pelos serviços do Firebase, como autenticação ou alterações no banco de dados</li>
+                                <br>
+                                <li>Hosting: Hospedagem de conteúdo estático e dinâmico diretamente nos servidores do Firebase, com SSL
+                                    gratuito, permitindo a implantação rápida de aplicações web.</li><br>
+                                <li>Cloud Messaging: Envio de mensagens e notificações para dispositivos móveis e web, integrando-se
+                                    facilmente com outros serviços do Google, como o Firebase Analytics.</li><br>
+                                <li>Analytics: Fornece insights detalhados sobre o uso do aplicativo, incluindo dados de usuários,
+                                    eventos e conversões, ajudando a entender melhor o comportamento dos usuários e otimizar a
+                                    experiência do aplicativo</li><br>
+                                <li>Performance Monitoring: Monitoramento do desempenho do aplicativo em tempo real, identificando
+                                    problemas de desempenho e otimizando o desempenho geral do aplicativo.</li><br>
+                                <li>Remote Config: Permite ajustar a aparência e o comportamento do aplicativo sem precisar lançar uma
+                                    atualização, com base em variáveis definidas pelo desenvolvedor.</li><br>
+                                <li>Machine Learning: Integração com o Google Cloud Machine Learning para implementar funcionalidades
+                                    avançadas de aprendizado de máquina nos aplicativos Firebase.</li><br>
+                            </ul>
+                
+            
+                
             </div>
-            <div class="col">
-                <p><a href="bnits.com.br">BNITS Desing for Web</a> - &copy; Copyrights 2024 </p>
+            <div class="conteudo2">
+            
+            <section id="Node.js">
+                <img src="img/1200px-Node.js_logo.svg.png" alt=""class="imgconteudo2">
+                <div class="row">
+                    <div class="colconteudo2">
+                        <h2 class="titulos">O que é Node.js?</h2>
+                        <p>Node.js é um ambiente de execução JavaScript construído sobre o motor V8 do Google Chrome. Ele permite
+                            que os desenvolvedores usem JavaScript tanto no frontend quanto no backend, unificando o desenvolvimento
+                            de aplicativos web. Node.js é conhecido por sua capacidade de lidar com operações de entrada e saída de
+                            forma não bloqueante e eficiente, o que o torna ideal para aplicações em tempo real e escaláveis.</p>
+                            <h1 class="titulos">Node.js e Hospedagem de Página no Firebase</h1>
+                            <p>Node.js e Firebase são duas tecnologias poderosas que, quando combinadas, oferecem uma plataforma
+                                flexível e eficiente para o desenvolvimento e hospedagem de aplicações web modernas. Neste artigo,
+                                exploraremos o papel do Node.js no contexto do Firebase e como você pode usar essas ferramentas para
+                                hospedar uma página web de forma simples e eficaz.</p>
+                            </div>
+                
+            </div>
+
+            </section>
+            <section>
+                <h1 class="titulos">Usando Node.js para Hospedar uma Página no Firebase</h1>
+                <ol>
+                    <li>Instalação do Firebase CLI: Primeiramente, você precisa instalar o Firebase Command Line Interface
+                        (CLI),
+                        que permite interagir com os serviços Firebase diretamente do seu terminal. Você pode instalá-lo via
+                        npm
+                        (Node Package Manager) usando o seguinte comando:</li><br>
+
+                    <li>Configuração do Firebase: Após a instalação, você precisa fazer login na sua conta do Google e
+                        iniciar um
+                        novo projeto Firebase (caso ainda não tenha um). Use o comando abaixo e siga as instruções para
+                        autenticar e
+                        configurar seu projeto:</li><br>
+
+                    <li>Durante o processo de inicialização (firebase init), você será solicitado a escolher os serviços que
+                        deseja
+                        configurar. Certifique-se de selecionar o Firebase Hosting.</li><br>
+                    <li> Preparação do Projeto: Após a inicialização, você terá uma estrutura básica de diretórios do
+                        Firebase.
+                        Coloque os arquivos estáticos do seu site (HTML, CSS, JavaScript, imagens, etc.) na pasta public
+                        criada pelo
+                        Firebase CLI.</li><br>
+
+                    <li> Deploy do Projeto: Para implantar seu site, basta executar o seguinte comando no diretório do
+                        projeto
+                        onde está o arquivo firebase.json:</li><br>
+                    </ol>
+
+                    <p>Isso fará o upload dos arquivos do seu site para os servidores do Firebase Hosting e tornará sua
+                        página
+                        acessível através de um subdomínio do firebaseapp.com ou um domínio personalizado configurado por
+                        você.
+                        Benefícios da Combinação Node.js e Firebase</p><br>
+                    <ul><li>• Simplicidade e Facilidade de Uso: Ambos Node.js e Firebase são conhecidos por sua simplicidade e
+                    facilidade de uso, permitindo que desenvolvedores se concentrem mais na lógica do aplicativo do que na
+                    configuração de infraestrutura.</li>
+                    <li>• Escalabilidade e Desempenho: Node.js é altamente escalável, e o Firebase Hosting oferece uma
+                    infraestrutura de hospedagem rápida e confiável, garantindo desempenho consistente mesmo com picos de
+                    tráfego.</li>
+                    <LI>• Integração com Serviços Firebase: Além de hospedagem, você pode integrar facilmente outros serviços
+                    Firebase, como autenticação de usuários, banco de dados em tempo real (Firestore), funções na nuvem
+                    (Cloud
+                    Functions), entre outros, para expandir a funcionalidade do seu aplicativo conforme necessário.</LI>
+                </ul>
+            </section>
+    
+
+        </div>
+        <!-- Conteúdo do Rodapé -->
+        <div class="rodape">
+            <div class="row">
+                <div>
+                    <h1 class="h1Bnits"> BNITS Design</h1>
+                </div>
+                <div class="colcopy">
+                    <p><a href="bnits.com.br">BNITS Desing for Web</a> - &copy; Copyrights 2024 </p>
+                </div>
+                <div class="h3rodape">
+                    <h3 >Mapa da pagina</h3>
+                    <ul>
+                        <li><a href="#Servicos">Serviços</a></li>
+                        <li><a href="#Node.js">Node.js</a></li>
+                        <li><a href="#Hospedagem">Hospedagem</a></li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
-    </div>
 
-</body>
+    </body>
 
 </html>
