@@ -28,8 +28,9 @@ nav ul li{
 .h1Firebase{
     padding-left:310px;
     padding-right:0px;
+    padding-top: 20px;
     color: aliceblue;
-    font-size: 100px;
+    font-size: 80px;
     font-display:initial;
     padding-bottom:20px; 
     text-align: center;
@@ -65,8 +66,8 @@ nav ul li{
     position: relative;
 }
 .imgconteudo2{
-    position: fixed;
-    align-items: center;
+    
+    width:25%; 
 }
 .rodape{
     width:100%;
@@ -128,4 +129,17 @@ nav ul li{
 }
 .extra{
     font-family:"JETBRAINSMONO";   
+}
+
+/* Estilos para telas menores (exemplo: smartphones) */
+@media only screen and (max-width: 600px) {
+    .h1Firebase {
+        font-size: 40px; /* Exemplo de redução do tamanho do título */
+        padding-left: 10px; /* Exemplo de ajuste de padding */
+    }
+
+    .colconteudo1, .col1, .colconteudo2 {
+        width: 100%; /* Ajuste de largura para ocupar toda a largura da tela */
+        text-align: center; /* Centralizar conteúdo */
+    }
 }
