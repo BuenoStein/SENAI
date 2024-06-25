@@ -62,7 +62,17 @@ a{
 }
 
 .rodape{
-    height:100px;
+    width:100%;
+    height: 50%;
     padding:0;
     color:white
+}
+.rowrodape{
+    display: flex;
+    align-items: center;
+}
+
+.colrodape{
+    flex:1;
+    
 }
