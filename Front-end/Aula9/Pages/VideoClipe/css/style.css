@@ -24,31 +24,28 @@ a{
     /* padding: 10px;  */
 }
 
-.containerTopo{
-    display: flex;
-    align-items: center; /* Centraliza verticalmente os itens dentro do cabeçalho */
-    
-}
 .h1topo{
     font-family: "IBM Plex Serif", serif;
     font-size: 150px;
      margin: 0;/* Remove margem padrão */
-     
+     flex:1;
 }
 .rowTopo{
     display: flex;
     align-items: center;
-    /* flex: 1;
     justify-content: space-between;
-    align-items: center;
-     padding: 0 20px;Espaçamento interno entre os elementos */
+    width:60%;
+
 } 
-.Topicos{
-    padding-left: 50%;
+.coltopicos{
+    margin-left: auto;
+   
 }
 .LogoLVCAS{
     max-width:33%;
+    
 }
+
 
 .conteudo{
     width:80%;
