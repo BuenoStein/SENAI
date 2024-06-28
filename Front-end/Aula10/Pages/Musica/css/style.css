@@ -102,3 +102,19 @@ a:hover{
     width: 25%;
     padding: 10px;
 }
+@media screen and (max-width:1000px){
+    h1{
+        color:blue;
+    }
+}
+@media screen and (max-width:800px) {
+    h1{
+        color:red;
+    }
+}
+@media screen and(mid-width:600px) {
+    .rowconteudo{
+        display:block;
+    }
+    
+}

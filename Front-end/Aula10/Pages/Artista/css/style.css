@@ -111,3 +111,31 @@ a:hover{
     width: 25%;
     padding: 10px;
 }
+@media screen and (max-width:1000px){
+    h1{
+        color:blue;
+    }
+}
+@media screen and (max-width:800px) {
+    h1{
+        color:red;
+    }
+}
+@media(mid-width:600px) {
+    .rowconteudo{
+        display:block;
+    }
+    
+}   
+
+
+
+@media screen and (min-width:400px) {
+    
+    .LogoLVCAS{
+
+    }
+    img{
+        min-width: 400px
+    }
+}
