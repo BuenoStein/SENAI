@@ -12,6 +12,11 @@ a{
     text-decoration: none;
     color: white
 }
+a:hover{
+    font-size:20px;
+    text-decoration: none;
+    color:white
+}
 /* CLASSES DO PROJETO */
 .topo{
     width:100%;

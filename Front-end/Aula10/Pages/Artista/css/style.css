@@ -10,7 +10,12 @@ html,body{
 }
 a{
     text-decoration: none;
-    color: white
+    color:white
+}
+a:hover{
+    font-size:20px;
+    text-decoration: none;
+    color:white
 }
 /* CLASSES DO PROJETO */
 .topo{
@@ -33,7 +38,7 @@ a{
 .rowTopo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     width:60%;
 
 } 
@@ -46,18 +51,39 @@ a{
     
 }
 
-
 .conteudo{
     width:80%;
     height: auto;
     padding:20px;
     margin: 0 auto;
-    background-color:rgb(140,140,140);
+    background-color:#45474B;
     color: white;
     text-shadow: #000 2px 3px 2px;
     
 }
+.rowconteudo{
+   display: flex;
+}
 
+.colconteudohist{
+    padding:20px;
+}
+.col8{
+    padding-left: 200px;
+    
+}
+.colconteudo2{
+    padding:20px;
+}
+.colconteudotitulo2{
+    padding-left:57px;
+}
+.colconteudo3{
+    padding:20px;
+}
+.colconteudotitulo3{
+    padding-left: 70px;
+}
 .rodape{
     width:100%;
     height: 50%;
