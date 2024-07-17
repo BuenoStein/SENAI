@@ -69,7 +69,7 @@ a:hover{
     padding:20px;
 }
 .col8{
-    padding-left: 200px;
+    padding-left: 60px;
     
 }
 .colconteudo2{
@@ -128,9 +128,16 @@ a:hover{
     
 }   
 
+@media screen and (min-width:200px) {
 
+    .imgLucas{
+        min-width:400px;
+        min-height:400px;
+    }
+    
+}
 
-@media screen and (min-width:400px) {
+/* @media screen and (min-width:400px) {
     
     .LogoLVCAS{
 
@@ -138,4 +145,4 @@ a:hover{
     img{
         min-width: 400px
     }
-}
+} */
