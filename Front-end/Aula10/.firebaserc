@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "lvcas": "lvcas-f0c42"
+  },
+  "targets": {
+    "lvcas-f0c42": {
+      "hosting": {
+        "hosting1": [
+          "artista"
+        ],
+        "hosting2": [
+          "letramusica"
+        ],
+        "hosting3": [
+          "videoclipe"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

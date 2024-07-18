@@ -1,11 +1,28 @@
 {
-    "hosting": {
-      "public": "public",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    }
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/Artista/**",
+        "destination": "/Artista/index.html"
+      },
+      {
+        "source": "/LetraMusica/**",
+        "destination": "/LetraMusica/index.html"
+      },
+      {
+        "source": "/VideoClipe/**",
+        "destination": "/VideoClipe/index.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
-  
+}
