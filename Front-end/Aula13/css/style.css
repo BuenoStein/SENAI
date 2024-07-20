@@ -1,0 +1,88 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    width:100%;
+    text-shadow: 1px 1px 2px black;
+    /* background-color: black; */
+}
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+/*ESTILO DE LETRAS*/
+h1{
+    color: beige;
+}
+p{
+    color:yellow;
+    
+}
+
+/* TOPO, CONTEUDO, RODAPE */
+
+.topo{
+    width: 97%;
+    background-image:url(../img/garden-4647544_1920.jpg);
+    background-position: center;
+    padding: 20px;
+}
+.conteudo{
+    padding: 20px;
+    width: 97%;
+    height: auto;
+    background-image:url(../img/ivy-3519431_1920.jpg);
+    background-blend-mode: color-burn;
+    
+}
+.rodape{
+    padding: 20px;
+    background-color: black;
+    width:97%;
+}
+img{
+    width:70px;
+}
+
+
+
+
+
+/* ROWS E COLS */
+.imgtopo{
+
+    width:25%;
+}
+.rowtopo{
+    display: flex;
+    justify-content: space-between;
+    /* space-between = ESPAÇO ENTRE  */
+}
+.coltopo1{
+    width: 33%;
+    /* width:62% */
+}
+.coltopo2{
+    width: 33%;
+    font-size:21px;
+    /* width:50%; */
+    text-align: center;
+    
+}
+.coltopo3{
+    width: 33%;
+    text-align: right;
+    /* padding-left: 70%; */
+    /* width:25%; */
+}
+.rowrodape{
+    display: flex;
+    justify-content: center;
+}
+/* .colrodape1{
+    display: flex;
+    justify-content: center;
+
+} */
+.colrodape2{
+    display: flex;
+    padding-top: 10px;
+
+}
