@@ -3,8 +3,11 @@
   font-size: 32px;
 }
 .container-fluid {
-  background: linear-gradient(180deg, rgba(34, 34, 34, 0.9) 0%, rgba(0, 0, 0, 1) 100%) !important;
-  color: white;
+  background: linear-gradient(180deg, #E0F0FF 0%, #B0C4DE 100%) !important;
+  color: black;
+}
+.container{
+  background: linear-gradient(180deg, #B0C4DE 0%, #E0F0FF 100%);
 }
 
 /* Quando você usa !important, a regra marcada como tal tem a prioridade máxima e sobrescreve qualquer outra regra, independentemente da especificidade ou da ordem. */
