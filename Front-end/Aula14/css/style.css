@@ -1,0 +1,6 @@
+.nav-item {
+  margin-left: 50px !important; /* Se $spacer fosse 16px, então 16px * 0.25 = 4px */
+  font-size: 32px;
+}
+
+/* Quando você usa !important, a regra marcada como tal tem a prioridade máxima e sobrescreve qualquer outra regra, independentemente da especificidade ou da ordem. */
