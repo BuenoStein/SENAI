@@ -1,0 +1,8 @@
+.col img {
+    max-width: 100%; /* Faz com que as imagens não excedam a largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+.col p{
+    text-align: center;
+}
