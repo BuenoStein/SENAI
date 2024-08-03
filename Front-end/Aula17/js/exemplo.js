@@ -3,6 +3,9 @@ function calculadora(){
     window.alert("Teste da função"); 
 }
 function somar(x,y){
+    document.getElementById('resultado').value=parseInt(x)+parseFloat(y)};
+
+function somar(x,y){
     window.alert("Soma dos valores:" +(parseInt(x)+parseFloat(y)));
 }
 function subtrair(a,b){
