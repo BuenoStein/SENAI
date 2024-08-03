@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e Funções</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/exemplo.js"></script>
+</head>
+
+<body>
+    <!-- topo da página -->
+    <div class="container-fluid bgfluid">
+        <h1>Resurface</h1>
+    </div>
+    <!-- conteúdo da pagina -->
+    <div class="container bgconteudo">
+
+        <!-- primeira linha do conteudo -->
+        <div class="row">
+
+            <div class="col">
+                <h3>Calculadora Básica</h3>
+                <fieldset>
+                    <form action="" method="">
+                        <label for="v1">Valor 1:</label>
+                        <input type="number" name="v1" id="v1">
+                        <br>
+                        <hr>
+                        <label for="v1">Valor 2:</label>
+                        <input type="number" name="v2" id="v2">
+                        <br>
+                        <input type="button" value="+" onclick="somar(v1.value,v2.value)">
+                        <input type="button" value="-" onclick="subtrair(v1.value,v2.value)">
+                        <input type="button" value="x" onclick="multiplicar(v1.value,v2.value)">
+                        <input type="button" value="/" onclick="dividir(v1.value,v2.value)">
+                        <input type="reset" value="Limpar">
+                        
+
+                    </form>
+                </fieldset>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <!-- rodapé da página -->
+    <div class="container-fluid bgfluid centralizar">
+        <div class="row">
+            <div class="col">
+                <h1>JavaScript</h1>
+            </div>
+            <div class="col">
+                <h1>Mapa da Página</h1>
+            </div>
+            <div class="col">
+                <p> Criado por: <a href="">Resurface</a></p>
+                <img src="img/Resurfacelogofloresta.jpg" width="80px" alt="">
+                <p>Copyrights &copy; 2024.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

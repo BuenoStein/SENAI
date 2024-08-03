@@ -1,0 +1,47 @@
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    color: white;
+    text-decoration: wavy;
+}
+a:hover{
+    color: yellow;
+
+}
+/* clas e id's */
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.container{
+        width: 80%;
+        margin: 0 auto;
+        background-color: grey;
+        color: white;      
+    }
+    .row{
+        display: flex;
+    }
+    .col{
+        flex: 1;
+    }
+    p{
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    .bgfluid{
+        background-color: black;
+    }
+    .bgconteudo{
+        background-color: grey;
+    }
