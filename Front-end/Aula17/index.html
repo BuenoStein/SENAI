@@ -1,80 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários e Funções</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/exemplo.js"></script>
+    <script src="js/app.js"></script>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+    html,body{
+        width:100%;
+        padding:0;
+        margin: 0 auto;
+        position:absolute;
 
+    }
+    *{
+        font-family: "Noto Serif", serif;
+    }
+    .container, .container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+    .centralizar{
+        position: relative;
+        width: 100%;
+        top:0;
+        text-align: center;
+        background-color: cadetblue; 
+        margin-top: -21px;
+    }
+
+
+    .fixar{
+        /* position: relative;
+        bottom: 0; */
+        width: 100%; 
+        text-align: center; 
+        background-color: cadetblue; 
+        
+    }
+    .centra{
+        position:relative;
+
+    }
+    .row{
+        display: flex;
+    }
+    .col{
+        flex: 1;
+        padding: 10px;
+        
+    }
+</style>
 <body>
-    <!-- topo da página -->
-    <div class="container-fluid bgfluid">
-        <h1>Resurface</h1>
+    <div class="container">
+        <div class="centralizar">
+        <h1>Bnits</h1>
     </div>
-    <!-- conteúdo da pagina -->
-    <div class="container bgconteudo">
-
-        <!-- primeira linha do conteudo -->
+    </div>
+    <div class="container-fluid">
+    <div class="centra">
+        <h1>gkhsa</h1>
+        
         <div class="row">
+        
+            <div class="col">
+                <h3>Calculadora Básica:</h3>
+                <fieldset>
+                   <form action="" method="">
+                    <label for="v1">Valor 1:
+                        <input type="number" name="" id="v1">
+                    </label>
+                    <br>
+                    <label for="v2">Valor 2:</label>
+                        <input type="number" name="v2" id="v2">
+                    <br>
+                    
+                    <input type="button" value="+" onclick="somar(v1.value,v2.value)">
+                    <input type="button" value="-" onclick="subtrair(v1.value,v2.value)">
+                    <input type="button" value="X" onclick="multiplica(v1.value,v2.value)">
+                    <input type="button" value="/" onclick="dividi(v1.value,v2.value)">
+                    <input type="reset" value="LIMPAR" >
+                    <br>
+                    <input type="number" name="" id="resultado" placeholder="Resultado" readonly>
+                   </form>
+                </fieldset>    
+            
+            </div>
 
             <div class="col">
-                <h3>Calculadora Básica</h3>
+            <h3>Calculo de Media final</h3>
+            <fieldset>
+                <form action="">
+                    <label for="">Nome:</label>
+                    <input type="text" name="nome" >
+                    <br>
+                    <label for="">1bim:</label>
+                    <input type="number" name="bim1"  min="0" max="10">
+                    <br>
+                    <label for="">2bim: </label>
+                    <input type="number" name="bim2" min="0" max="10">
+                    <br>
+                    <label for="">3bim: </label>
+                    <input type="number" name="bim3" min="0" max="10">
+                    <br>
+                    <label for="">4bim: </label>
+                    <input type="number" name="bim4" min="0" max="10">
+               
+                <input type="button" value="Calcular" onclick="calcularMedia(nome.value,bim1.value,bim2.value,bim3.value,bim4.value)"> 
+                <input type="reset" value="LIMPAR" >
+                <br>
+                <label for="">Resultado Final:
+                    <br>
+                    <input type="number" name="" id="resultadobi" placeholder="Resultado" readonly >
+                </label>
+            </form> 
+            </fieldset>
+
+            </div>
+
+            <div class="col">
+                <h3>Calcular Volume Cúbico</h3>
                 <fieldset>
-                    <form action="" method="">
-                        <label for="v1">Valor 1:</label>
-                        <input type="number" name="v1" id="v1">
+                    <form action="">
+                        <label for="">Altura:</label>
+                        <input type="number" name="altura">
                         <br>
-                        <hr>
-                        <label for="v1">Valor 2:</label>
-                        <input type="number" name="v2" id="v2">
+                        <label for="">Largura:</label>
+                        <input type="number" name="largura">
                         <br>
-                        <input type="button" value="+" onclick="somar(v1.value,v2.value)">
-                        <input type="button" value="-" onclick="subtrair(v1.value,v2.value)">
-                        <input type="button" value="x" onclick="multiplicar(v1.value,v2.value)">
-                        <input type="button" value="/" onclick="dividir(v1.value,v2.value)">
+                        <label for="">Profundidade:</label>
+                        <input type="number" name="profundidade">
+                        <br>
+                        <input type="button" value="Calcular Volume"
+                            onclick="calcularVolume(altura.value, largura.value, profundidade.value)">
                         <input type="reset" value="Limpar">
                         <br>
-                        <input type="number" name="" id="resultado" placeholder="Resultado">
-                        
-
-                    </form>
-                </fieldset>
+                        <input type="number" id="volumeCubico" readonly>
+                    </label>
+                </form>
+            </fieldset>    
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
+            </div>
+        
+        
         <div class="row">
-
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+                <div class="col"><p>bla</p></div>
+                <div class="col"><p>bla</p></div>
+                <div class="col"><p>bla</p></div>
         </div>
-
+        
         <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+                    <div class="col"><p>bla</p></div>
+                    <div class="col"><p>bla</p></div>
+                    <div class="col"><p>bla</p></div>
         </div>
     </div>
-    <!-- rodapé da página -->
-    <div class="container-fluid bgfluid centralizar">
+</div>
+</div>
+    
+    <div class="container">
+        <div class="fixar">
         <div class="row">
             <div class="col">
-                <h1>JavaScript</h1>
-            </div>
-            <div class="col">
-                <h1>Mapa da Página</h1>
-            </div>
-            <div class="col">
-                <p> Criado por: <a href="">Resurface</a></p>
-                <img src="img/Resurfacelogofloresta.jpg" width="80px" alt="">
-                <p>Copyrights &copy; 2024.</p>
+                <a href="bnits.com.br"><img src="img/LOGO_BNITS.png" alt="" height="85px"></a> 
+                <p>Criado por <a href="bnits.com.br">BNITS Design</a></p>
+                <p>Copyrights &copy; 2024.</p></div>
             </div>
         </div>
     </div>
+</div>
 </body>
-
 </html>
