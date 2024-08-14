@@ -52,3 +52,14 @@ function calcularVolume(a, l, p) {
 
     document.getElementById('volumeCubico').value = vol;
 }
+var num = 0;
+var resto = 0;
+function jogar(n){
+    num=parseInt(n);
+    resto=num%2;
+    if(resto == 0){
+        document.getElementById('parimpar').value="PAR";
+    } else {
+        document.getElementById('parimpar').value="IMPAR";
+    }
+}
