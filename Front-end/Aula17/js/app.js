@@ -142,6 +142,7 @@ dia= parseInt(dia)
         if(user == u && pass == p){
             window.alert("penetrou com gosto😊")
             window.location.assign("pagina.html")
+            // faz ir para outra paginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         } else if(user == u && pass !=p){
             window.alert("entrada negada! senha incorreta")
         } else if (user != u && pass==p){
