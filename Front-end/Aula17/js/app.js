@@ -105,3 +105,34 @@ dia= parseInt(dia)
 
     }
 }
+     var mes = 0
+     function mostrarMes(mes){
+     mes = parseInt(mes)
+     if(mes == 1){
+         document.getElementById('numberMes').value = "Janeiro"
+     } else if(mes ==2){
+         document.getElementById('numberMes').value = "Fevereiro"
+     } else if(mes ==3){
+         document.getElementById('numberMes').value = "Março"
+     } else if(mes ==4){
+         document.getElementById('numberMes').value = "Abril"
+     } else if(mes ==5){
+         document.getElementById('numberMes').value = "Maio"
+     } else if(mes ==6){
+         document.getElementById('numberMes').value = "Junho"
+     } else if(mes ==7){
+         document.getElementById('numberMes').value = "Julho"
+     } else if(mes ==8){
+         document.getElementById('numberMes').value = "Agosto"
+     } else if(mes ==9){
+         document.getElementById('numberMes').value = "Setembro"
+     } else if(mes ==10){
+         document.getElementById('numberMes').value = "Outubro"
+     } else if(mes ==11){
+         document.getElementById('numberMes').value = "Novembro"
+     } else if(mes ==12){
+         document.getElementById('numberMes').value = "Dezembro"
+     } else {
+             document.getElementById('numberMes').value = "Simplesmente não existe"
+          }
+     }
