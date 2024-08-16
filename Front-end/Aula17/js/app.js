@@ -136,3 +136,19 @@ dia= parseInt(dia)
              document.getElementById('numberMes').value = "Simplesmente não existe"
           }
      }
+     var u = "senai"
+     var p = "senai123" 
+     function loginButton(user,pass){
+        if(user == u && pass == p){
+            window.alert("penetrou com gosto😊")
+            window.location.assign("pagina.html")
+        } else if(user == u && pass !=p){
+            window.alert("entrada negada! senha incorreta")
+        } else if (user != u && pass==p){
+            window.alert("entrada negada! usario incorreto")
+        } else {
+            window.alert("entrada negada !! usario e senha incorretos")
+        }
+
+
+     }
