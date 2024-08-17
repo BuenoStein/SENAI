@@ -140,7 +140,7 @@ dia= parseInt(dia)
      var p = "senai123" 
      function loginButton(user,pass){
         if(user == u && pass == p){
-            window.alert("penetrou com gosto😊")
+            window.alert("entrou")
             window.location.assign("pagina.html")
             // faz ir para outra paginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         } else if(user == u && pass !=p){
@@ -151,5 +151,14 @@ dia= parseInt(dia)
             window.alert("entrada negada !! usario e senha incorretos")
         }
 
+
+     }
+
+     function calculaSalario(salario){
+        if (salario * 0.06) {
+            document.getElementById('VT').value
+        } else {
+            alert("não funfo")
+        }
 
      }

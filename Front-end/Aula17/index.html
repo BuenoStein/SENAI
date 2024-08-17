@@ -231,7 +231,46 @@
                 </fieldset>        
                 </div>
                 <div class="col">
-                    <p>bla</p>
+                    <fieldset>
+                        <form action="">
+                            <label for="">Sálario R$:</label>
+                            <input type="number" id="salario">
+                            <input type="button" value="calcular" onclick="calculaSalario(salario.value)">     
+                            <br>
+                            <label for="">VT 6%:</label>
+                            <input type="number" id="VT">
+                            <!--X 0.06 -->
+                            <br>
+                            <label for="">VR 3,5%:</label>
+                            <input type="number" id="VR" id="">
+                            <!--X 0.035 -->
+                            <br>
+                            <label for="">INSS:</label>
+                            <input type="number" id="INSS">
+                            <!--Salario >= 1.412,00 { salario * 0.075}
+                                Salario 1412,01 >= 2666,68 { salario * 0.09}
+                                Salario 2666,69 >= 4000,03 { salario * 0.12 }
+                                Salario 4000,04 >= 7.786,02 { salario * 0.14}
+                                -->
+                            <br>
+                            <label for="">IR:</label>
+                            <input type="number" id="IR">
+                            <!--Salario 2259,20 == 0 
+                                Salario 2259,21 >= 2826,65 { salario * 0.075}
+                                Salario 2826,66 >= 3751,05 { salario * 0.15}
+                                Salario 3751,06 >= 4664,68 { salario *0.225}
+                                SE NÃO o calculo é o salario *0.275
+                            -->
+                            <br>
+                            <label for="">Total Desc:</label>
+                            <input type="number" id="total" >
+                            <!-- Calcular o total de descontos: VT+VR+INSS+IRRF -->
+                            <br>
+                            <label for="">Salario Liquido:</label>
+                            <input type="number" id="salarioLiquido">
+                            <!-- Calcular o Salario Liquido: Salario - Total de Descontos -->
+                        </form>
+                    </fieldset>
                 </div>
                 <div class="col">
                     <p>bla</p>
