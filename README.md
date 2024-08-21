@@ -22,13 +22,14 @@ Esse Repositório tem o intuito de guardar as aulas que foram passadas para que 
 
 
 
-## Tecnologias Utilizadas
+## Tecnologias que estou Aprendendo 
 
 - HTML
 - CSS
-(Por enquanto só essas duas)
-
-
+- PHP
+- SQL
+- BootsTrap
+- JavaScript
 
 
 ## Como Rodar os Projetos
