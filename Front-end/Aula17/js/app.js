@@ -139,26 +139,91 @@ dia= parseInt(dia)
      var u = "senai"
      var p = "senai123" 
      function loginButton(user,pass){
-        if(user == u && pass == p){
-            window.alert("entrou")
-            window.location.assign("pagina.html")
-            // faz ir para outra paginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        } else if(user == u && pass !=p){
-            window.alert("entrada negada! senha incorreta")
-        } else if (user != u && pass==p){
-            window.alert("entrada negada! usario incorreto")
-        } else {
-            window.alert("entrada negada !! usario e senha incorretos")
+         if(user == u && pass == p){
+             window.alert("entrou")
+             window.location.assign("pagina.html")
+             // faz ir para outra paginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            } else if(user == u && pass !=p){
+                window.alert("entrada negada! senha incorreta")
+            } else if (user != u && pass==p){
+                window.alert("entrada negada! usario incorreto")
+            } else {
+                window.alert("entrada negada !! usario e senha incorretos")
+            }
+            
+            
         }
+        
+        // v1,v2,i1,i2
+        var s = 0
+        function pegarSalario(salario,v1,v2,i1,i2){
+            s = parseInt(salario)
+    //   CALCULO VT
+    var calculaVt = salario * 0.06
+      document.getElementById('VT').value = calculaVt
 
+    //   CALCULO VR
+    var calculaVr = salario * 0.035
+      document.getElementById('VR').value = calculaVr
 
-     }
+    // CALCULO INSS
+      if(salario == 1.412){
+        var calculoInss1 = salario * 0.075
+        document.getElementById('INSS').value = calculoInss1
+      } 
 
-     function calculaSalario(salario){
-        if (salario * 0.06) {
-            document.getElementById('VT').value
-        } else {
-            alert("não funfo")
+      if(salario >= 1412.01 || salario <= 2666.68){
+        var calculoInss2 = salario * 0.09
+        document.getElementById('INSS').value = calculoInss2
+      }
+
+       if(salario >= 2666.69 || salario <= 4000.03){
+        var calculoInss3 = salario * 0.12
+        document.getElementById('INSS').value = calculoInss3
+      }
+
+       if(salario >= 4000.04|| salario >= 7786.02){
+        var calculoInss4 = salario * 0.14
+        document.getElementById('INSS').value = calculoInss4
+      }
+
+    //   CALCULO IR
+        if(salario <= 2259.20 ){
+            var calculadora2 = salario * 0 
+            document.getElementById('IR').value = calculadora2
+
+        } 
+         if(salario >= 2259.21 || salario <= 2826.65){
+            var calculoIR1 = salario * 0.075
+            document.getElementById('IR').value = calculoIR1
+            
+        } 
+         if(salario >= 2826.66 || salario <= 3751.05){
+            var calculoIR2 = salario * 0.15
+            document.getElementById('IR').value = calculoIR2
+
+        } 
+         if(salario >= 3751.06 || salario <= 4664.68){
+            var calculoIR3 = salario * 0.225
+            document.getElementById('IR').value= calculoIR3
+
+        } 
+         if(salario >= 4664.69){
+            var calculoIR4 = salario * 0.275
+            document.getElementById('IR').value= calculoIR4
         }
-
-     }
+                 // CALCULO TOTALDESCONTO
+    
+    v1 = parseInt(document.getElementById("VT").value)
+    v2 = parseInt(document.getElementById("VR").value)
+    i1 = parseInt(document.getElementById("INSS").value)
+    i2 = parseInt(document.getElementById("IR").value)
+    totalDesc = v1 + v2 + i1 + i2
+    document.getElementById('totalDesc').value = totalDesc
+    // CALCULO SALARIOLIQUIDO
+    var calculoLiquido = salario - totalDesc
+        document.getElementById('salarioLiquido').value = calculoLiquido
+    
+    
+    }
+ 
