@@ -235,20 +235,24 @@
                         <form action="">
                             <label for="">Sálario R$:</label>
                             <input type="number" id="salario">
+                            <br>
                             <input type="button" value="Calcular" onclick="pegarSalario(salario.value,VT.value,VR.value,INSS.value,IR.value)">     
                             <label for=""></label>
                             <br>
 
                             <label for="">VT 6%:</label>
-                            <input type="number" id="VT" readonly>
+                            <br>
+                            <input type="number" id="VT" placeholder="R$ -" readonly>
                             <!--X 0.06 -->
                             <br>
                             <label for="">VR 3,5%:</label>
-                            <input type="number" id="VR" id="" readonly>
+                            <br>
+                            <input type="number" id="VR" id="" placeholder="R$ -" readonly>
                             <!--X 0.035 -->
                             <br>
                             <label for="">INSS:</label>
-                            <input type="number" id="INSS" readonly>
+                            <br>
+                            <input type="number" id="INSS" placeholder="R$ -" readonly>
                             <!--Salario >= 1.412,00 { salario * 0.075}
                                 Salario 1412,01 >= 2666,68 { salario * 0.09}
                                 Salario 2666,69 >= 4000,03 { salario * 0.12 }
@@ -256,7 +260,8 @@
                                 -->
                             <br>
                             <label for="">IR:</label>
-                            <input type="number" id="IR" readonly>
+                            <br>
+                            <input type="number" id="IR" placeholder="R$ -"readonly>
                             <!--Salario 2259,20 == 0 
                                 Salario 2259,21 >= 2826,65 { salario * 0.075}
                                 Salario 2826,66 >= 3751,05 { salario * 0.15}
@@ -265,11 +270,13 @@
                             -->
                             <br>
                             <label for="">Total Desc:</label>
-                            <input type="number" id="totalDesc" readonly>
+                            <br>
+                            <input type="number" id="totalDesc" placeholder="R$ -"readonly>
                             <!-- Calcular o total de descontos: VT+VR+INSS+IRRF -->
                             <br>
                             <label for="">Salario Liquido:</label>
-                            <input type="number" id="salarioLiquido" readonly>
+                            <br>
+                            <input type="number" id="salarioLiquido" placeholder="R$ -" readonly>
                             <!-- Calcular o Salario Liquido: Salario - Total de Descontos -->
                         </form>
                     </fieldset>

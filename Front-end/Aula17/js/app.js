@@ -154,10 +154,10 @@ dia= parseInt(dia)
             
         }
         
-        // v1,v2,i1,i2
-        var s = 0
+      
+       
         function pegarSalario(salario,v1,v2,i1,i2){
-            s = parseInt(salario)
+           
     //   CALCULO VT
     var calculaVt = salario * 0.06
       document.getElementById('VT').value = calculaVt
@@ -167,22 +167,22 @@ dia= parseInt(dia)
       document.getElementById('VR').value = calculaVr
 
     // CALCULO INSS
-      if(salario == 1.412){
+      if(salario <= 1.412){
         var calculoInss1 = salario * 0.075
         document.getElementById('INSS').value = calculoInss1
       } 
 
-      if(salario >= 1412.01 || salario <= 2666.68){
+      else if(salario >= 1412.01 || salario <= 2666.68){
         var calculoInss2 = salario * 0.09
         document.getElementById('INSS').value = calculoInss2
       }
 
-       if(salario >= 2666.69 || salario <= 4000.03){
+      else if(salario >= 2666.69 || salario <= 4000.03){
         var calculoInss3 = salario * 0.12
         document.getElementById('INSS').value = calculoInss3
       }
 
-       if(salario >= 4000.04|| salario >= 7786.02){
+      else if(salario >= 4000.04|| salario >= 7786.02){
         var calculoInss4 = salario * 0.14
         document.getElementById('INSS').value = calculoInss4
       }
@@ -193,31 +193,31 @@ dia= parseInt(dia)
             document.getElementById('IR').value = calculadora2
 
         } 
-         if(salario >= 2259.21 || salario <= 2826.65){
+        else if(salario >= 2259.21 || salario <= 2826.65){
             var calculoIR1 = salario * 0.075
             document.getElementById('IR').value = calculoIR1
             
         } 
-         if(salario >= 2826.66 || salario <= 3751.05){
+        else if(salario >= 2826.66 || salario <= 3751.05){
             var calculoIR2 = salario * 0.15
             document.getElementById('IR').value = calculoIR2
 
         } 
-         if(salario >= 3751.06 || salario <= 4664.68){
+         else if(salario >= 3751.06 || salario <= 4664.68){
             var calculoIR3 = salario * 0.225
             document.getElementById('IR').value= calculoIR3
 
         } 
-         if(salario >= 4664.69){
+        else if(salario >= 4664.69){
             var calculoIR4 = salario * 0.275
             document.getElementById('IR').value= calculoIR4
         }
                  // CALCULO TOTALDESCONTO
     
-    v1 = parseInt(document.getElementById("VT").value)
-    v2 = parseInt(document.getElementById("VR").value)
-    i1 = parseInt(document.getElementById("INSS").value)
-    i2 = parseInt(document.getElementById("IR").value)
+    v1 = parseFloat(document.getElementById("VT").value)
+    v2 = parseFloat(document.getElementById("VR").value)
+    i1 = parseFloat(document.getElementById("INSS").value)
+    i2 = parseFloat(document.getElementById("IR").value)
     totalDesc = v1 + v2 + i1 + i2
     document.getElementById('totalDesc').value = totalDesc
     // CALCULO SALARIOLIQUIDO
