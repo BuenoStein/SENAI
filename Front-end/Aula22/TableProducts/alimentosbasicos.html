@@ -53,57 +53,59 @@
                     <td><img src="../img/açucar.png" alt=""></td>
                     <td>
                         <h4>Açúcar</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus vero possimus laborum amet, omnis earum velit labore, iure sapiente corrupti dolorem doloribus accusamus, eaque explicabo incidunt unde iste consequuntur?  </p>
+                        <p>Açucar.</p>
                     </td>
-                    <td><input type="number" name="prod1" readonly value=""></td>
-                    <td><input type="number" name="qtd1" onchange=""></td>
-                    <td><input type="number" id="sub1" readonly placeholder="R$ -"></td>
+                    <td><input type="number" name="prodAcucar" readonly value="4.50"></td>
+                    <td><input type="number" name="qtdAcucar" onchange="acucarCalc(prodAcucar.value,qtdAcucar.value)"></td>
+                    <td><input type="number" id="subAcucar" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">2</th>
                     <td><img src="../img/arroz.png" alt=""></td>
                     <td>
                         <h4>Arroz</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore excepturi corrupti molestiae eius officia magni quod provident voluptatem possimus tenetur rem et, dolore quaerat doloribus debitis odio placeat. Ducimus, aspernatur.</p>
+                        <p>O Arroz.</p>
                     </td>
-                    <td><input type="number" name="prod2" readonly value=""></td>
-                    <td><input type="number" name="qtd2"></td>
-                    <td><input type="number" name="sub2" readonly placeholder="R$ -"></td>
+                    <td><input type="number" name="prodArroz" readonly value="22.00"></td>
+                    <td><input type="number" name="qtdArroz" onchange="arrozCalc(prodArroz.value,qtdArroz.value)"></td>
+                    <td><input type="number" id="subArroz" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">3</th>
                     <td><img src="../img/feijão.png" alt=""></td>
                     <td>
                         <h4>Feijão</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellendus similique voluptas facere amet ipsa odio eveniet eligendi debitis eius sunt, dicta iste sed nihil praesentium quae perferendis voluptatem. Doloremque.</p>
+                        <p>Feijão... esse tem História.</p>
                     </td>
-                    <td><input type="number" name="prod3" readonly value=""></td>
-                    <td><input type="number" name="qtd3"></td>
-                    <td><input type="number" name="sub3" readonly placeholder="R$ -"></td>
+                    <td><input type="number" name="prodFeijao" readonly value="8.50"></td>
+                    <td><input type="number" name="qtdFeijao" onchange="feijaoCalc(prodFeijao.value,qtdFeijao.value)"></td>
+                    <td><input type="number" id="subFeijao" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">4</th>
                     <td><img src="../img/oleo.png" alt=""></td>
                     <td>
                         <h4>Óleo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, quam inventore explicabo deleniti, repudiandae ab, ut magni est minus natus facere culpa? Officiis dolores sapiente alias ab dolor itaque?</p>
+                        <p>Não é Óleo de carro logo, esta mais barato.</p>
                     </td>
-                    <td><input type="number" name="prod4" readonly value=""></td>
-                    <td><input type="number" name="qtd4"></td>
-                    <td><input type="number" name="sub4" readonly placeholder="R$ -"></td>
-                
+                    <td><input type="number" name="prodOleo" readonly value="9.50"></td>
+                    <td><input type="number" name="qtdOleo" onchange="oleoCalc(prodOleo.value,qtdOleo.value)"></td>
+                    <td><input type="number" id="subOleo" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">5</th>
                     <td><img src="../img/macarrão.png" alt=""></td>
                     <td>
                         <h4>Macarrão</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, quam inventore explicabo deleniti, repudiandae ab, ut magni est minus natus facere culpa? Officiis dolores sapiente alias ab dolor itaque?</p>
+                        <p>O Macarrão</p>
                     </td>
-                    <td><input type="number" name="prod4" readonly value=""></td>
-                    <td><input type="number" name="qtd4"></td>
-                    <td><input type="number" name="sub4" readonly placeholder="R$ -"></td>
-                
+                    <td><input type="number" name="prodMacarrao" readonly value="3.50"></td>
+                    <td><input type="number" name="qtdMacarrao" onchange="macarraoCalc(prodMacarrao.value,qtdMacarrao.value)"></td>
+                    <td><input type="number" id="subMacarrao" readonly placeholder="R$ -"></td>
                 </tr>
             </tbody>
         </table>
@@ -130,4 +132,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="../js/app.js"></script>
 </html>

@@ -52,69 +52,71 @@
                     <td><img src="../img/cafe.png" alt=""></td>
                     <td>
                         <h4>Café</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellendus vero possimus laborum amet, omnis earum velit labore, iure sapiente corrupti dolorem doloribus accusamus, eaque explicabo incidunt unde iste consequuntur?  </p>
+                        <p>Esse ai tem MUITA História</p>
                     </td>
-                    <td><input type="number" name="prod1" readonly value=""></td>
-                    <td><input type="number" name="qtd1" onchange=""></td>
-                    <td><input type="number" id="sub1" readonly placeholder="R$ -"></td>
+                    <td><input type="number" name="prodCafe" readonly value="15.00"></td>
+                    <td><input type="number" name="qtdCafe" onchange="cafeCalc(prodCafe.value,qtdCafe.value)"></td>
+                    <td><input type="number" id="subCafe" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">2</th>
                     <td><img src="../img/filtrocafe.png" alt=""></td>
                     <td>
                         <h4>Filtro de Café</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore excepturi corrupti molestiae eius officia magni quod provident voluptatem possimus tenetur rem et, dolore quaerat doloribus debitis odio placeat. Ducimus, aspernatur.</p>
+                        <p>Filtra a História</p>
                     </td>
-                    <td><input type="number" name="prod2" readonly value=""></td>
-                    <td><input type="number" name="qtd2"></td>
-                    <td><input type="number" name="sub2" readonly placeholder="R$ -"></td>
+                    <td><input type="number" name="prodFiltroCafe" readonly value="6.00"></td>
+                    <td><input type="number" name="qtdFiltroCafe" onchange="filtroCafeCalc(prodFiltroCafe.value,qtdFiltroCafe.value)"></td>
+                    <td><input type="number" id="subFiltroCafe" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">3</th>
                     <td><img src="../img/leite.png" alt=""></td>
                     <td>
                         <h4>Leite</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellendus similique voluptas facere amet ipsa odio eveniet eligendi debitis eius sunt, dicta iste sed nihil praesentium quae perferendis voluptatem. Doloremque.</p>
+                        <p>O Leite.</p>
                     </td>
-                    <td><input type="number" name="prod3" readonly value=""></td>
-                    <td><input type="number" name="qtd3"></td>
-                    <td><input type="number" name="sub3" readonly placeholder="R$ -"></td>
+                    <td><input type="number" name="prodLeite" readonly value="5.00"></td>
+                    <td><input type="number" name="qtdLeite" onchange="leiteCalc(prodLeite.value,qtdLeite.value)"></td>
+                    <td><input type="number" id="subLeite" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">4</th>
-                    <td><img src="../img/manteiga.png" alt=""></td>
+                    <td><img src="../img/manteiga1.png" alt=""></td>
                     <td>
                         <h4>Manteiga</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, quam inventore explicabo deleniti, repudiandae ab, ut magni est minus natus facere culpa? Officiis dolores sapiente alias ab dolor itaque?</p>
+                        <p>Passe no Pão</p>
                     </td>
-                    <td><input type="number" name="prod4" readonly value=""></td>
-                    <td><input type="number" name="qtd4"></td>
-                    <td><input type="number" name="sub4" readonly placeholder="R$ -"></td>
-                
+                    <td><input type="number" name="prodManteiga" readonly value="8.00"></td>
+                    <td><input type="number" name="qtdManteiga" onchange="manteigaCalc(prodManteiga.value,qtdManteiga.value)"></td>
+                    <td><input type="number" id="subManteiga" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">5</th>
                     <td><img src="../img/margarina.png" alt=""></td>
                     <td>
                         <h4>Margarina</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, quam inventore explicabo deleniti, repudiandae ab, ut magni est minus natus facere culpa? Officiis dolores sapiente alias ab dolor itaque?</p>
+                        <p>Quem prefere margarina do que MANTEIGA??</p>
                     </td>
-                    <td><input type="number" name="prod4" readonly value=""></td>
-                    <td><input type="number" name="qtd4"></td>
-                    <td><input type="number" name="sub4" readonly placeholder="R$ -"></td>
-                
+                    <td><input type="number" name="prodMargarina" readonly value="6.50"></td>
+                    <td><input type="number" name="qtdMargarina" onchange="margarinaCalc(prodMargarina.value,qtdMargarina.value)"></td>
+                    <td><input type="number" id="subMargarina" readonly placeholder="R$ -"></td>
                 </tr>
+                
                 <tr>
                     <th scope="row">6</th>
                     <td><img src="../img/yogurte.png" alt=""></td>
                     <td>
                         <h4>Yogurte</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos, quam inventore explicabo deleniti, repudiandae ab, ut magni est minus natus facere culpa? Officiis dolores sapiente alias ab dolor itaque?</p>
+                        <p>Bom pra treinar.. rs</p>
                     </td>
-                    <td><input type="number" name="prod4" readonly value=""></td>
-                    <td><input type="number" name="qtd4"></td>
-                    <td><input type="number" name="sub4" readonly placeholder="R$ -"></td>
-                
+                    <td><input type="number" name="prodYogurte" readonly value="7.00"></td>
+                    <td><input type="number" name="qtdYogurte" onchange="yogurteCalc(prodYogurte.value,qtdYogurte.value)"></td>
+                    <td><input type="number" id="subYogurte" readonly placeholder="R$ -"></td>
                 </tr>
             </tbody>
         </table>
@@ -141,4 +143,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="../js/app.js"></script>
 </html>
