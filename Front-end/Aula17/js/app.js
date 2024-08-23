@@ -72,39 +72,39 @@ function jogar(n) {
 var dia = 0
 function mostrarDia(dia){
 dia= parseInt(dia)
-    // if(dia == 1){
-    //     document.getElementById('diaSemana').value = "Domingo"
-    // }
-    // else if(dia == 2){
-    //     document.getElementById('diaSemana').value = "Segunda"
-    // }
-    // else if(dia == 3){
-    //     document.getElementById('diaSemana').value = "Terça"
-    // }
-    // else if(dia == 4){
-    //     document.getElementById('diaSemana').value = "Quarta"
-    // }
-    // else if(dia == 5){
-    //     document.getElementById('diaSemana').value = "Quinta"
-    // }
-    // else if(dia == 6){
-    //     document.getElementById('diaSemana').value = "Sexta"
-    // }
-    // else if(dia == 7){
-    //     document.getElementById('diaSemana').value = "Sabado"
-    // } else {
-    //     document.getElementById('diaSemana').value = "Simplesmente não existe"
-    // }
-    switch(dia){
-        case 1:
-            document.getElementById('diaSemana').value = "Domingo";
-            break;
-        default:
-            document.getElementeById('diSemana').value = "Simplesmente não existe"
+    if(dia == 1){
+        document.getElementById('diaSemana').value = "Domingo"
+    }
+    else if(dia == 2){
+        document.getElementById('diaSemana').value = "Segunda"
+    }
+    else if(dia == 3){
+        document.getElementById('diaSemana').value = "Terça"
+    }
+    else if(dia == 4){
+        document.getElementById('diaSemana').value = "Quarta"
+    }
+    else if(dia == 5){
+        document.getElementById('diaSemana').value = "Quinta"
+    }
+    else if(dia == 6){
+        document.getElementById('diaSemana').value = "Sexta"
+    }
+    else if(dia == 7){
+        document.getElementById('diaSemana').value = "Sabado"
+    } else {
+        document.getElementById('diaSemana').value = "Simplesmente não existe"
+    }
+    // switch(dia){
+    //     case 1:
+    //         document.getElementById('diaSemana').value = "Domingo";
+    //         break;
+    //     default:
+    //         document.getElementeById('diSemana').value = "Simplesmente não existe"
     
 
     }
-}
+
      var mes = 0
      function mostrarMes(mes){
      mes = parseInt(mes)
