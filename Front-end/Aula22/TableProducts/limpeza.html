@@ -67,7 +67,7 @@
                         <p>Deter gente.</p>
                     </td>
                     <td><input type="number" id="prodDetergente" readonly value="2.50"></td>
-                    <td><input type="number" id="qtdDetergente" onchange="detergenteCalc()"></td>
+                    <td><input type="number" id="qtdDetergente" onchange="detergenteCalc(prodDetergente.value,qtdDetergente.value)"></td>
                     <td><input type="number" id="subDetergente" readonly placeholder="R$ -"></td>
                 </tr>
                 
@@ -79,7 +79,7 @@
                         <p>Sa bão? em pó.</p>
                     </td>
                     <td><input type="number" id="prodSabaoEmPo" readonly value="11.00"></td>
-                    <td><input type="number" id="qtdSabaoEmPo" onchange="sabaoEmPoCalc()"></td>
+                    <td><input type="number" id="qtdSabaoEmPo" onchange="sabaoEmPoCalc(prodSabaoEmPo.value,qtdSabaoEmPo.value )"></td>
                     <td><input type="number" id="subSabaoEmPo" readonly placeholder="R$ -"></td>
                 </tr>
                 
@@ -91,7 +91,7 @@
                         <p>VEJA.</p>
                     </td>
                     <td><input type="number" id="prodVeja" readonly value="4.50"></td>
-                    <td><input type="number" id="qtdVeja" onchange="vejaCalc()"></td>
+                    <td><input type="number" id="qtdVeja" onchange="vejaCalc(prodVeja.value,qtdVeja.value)"></td>
                     <td><input type="number" id="subVeja" readonly placeholder="R$ -"></td>
                 </tr>
             </tbody>

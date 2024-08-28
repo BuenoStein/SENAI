@@ -94,20 +94,28 @@ function margarinaCalc(prod, qtd){
     total20 = qtd * prod
     document.getElementById('subMargarina').value = total20.toFixed(2)
 }
-function yogurteCalc(prod, qtd){
-              
-    total21 = qtd * prod 
-    document.getElementById('subYorgute').value = total21.toFixed(2)
+// NÃO SABIA ONDE ESTAVA O ERRO ENT SÓ BOTEI NO GPT
+function yogurteCalc() {
+    // Obtém os valores dos inputs
+    var prod = parseFloat(document.getElementById('prodYogurte').value);
+    var qtd = parseFloat(document.getElementById('qtdYogurte').value);
+    
+    // Calcula o total
+    var total21 = qtd * prod;
+    
+    // Atualiza o valor do input de subtotal
+    document.getElementById('subYogurte').value = total21.toFixed(2);
 }
+
 function biscoitoRecheadoCalc(prod, qtd){
               
     total22  = qtd * prod
-    document.getElementById('subBiscoitoRecheado').value = total22.toFixed(2)
+    document.getElementById('subprodBiscoitoRech').value = total22.toFixed(2)
 } 
 function biscoitoSalgadoCalc(prod, qtd){
       
     total23 = qtd * prod
-    document.getElementById('subBiscoitoSalgado').value = total23.toFixed(2)
+    document.getElementById('subBiscotoSalg').value = total23.toFixed(2)
 }
 function paoFormaCalc(prod, qtd){
        
