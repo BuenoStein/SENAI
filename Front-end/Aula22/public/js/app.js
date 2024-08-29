@@ -132,3 +132,7 @@ function alhoCalc(prod, qtd){
     total26 = qtd * prod;
     document.getElementById('subAlho').value = total26.toFixed(2)
 }
+function acucarCalc(prod, qtd){
+    total27 = qtd * prod;
+    document.getElementById('subAcucar').value = total27.toFixed(2)
+}

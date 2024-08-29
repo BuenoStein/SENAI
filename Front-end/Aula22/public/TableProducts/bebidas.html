@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado BNITS - B/I</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- topo -->
+    
+        <nav class="navbar navbar-expand-lg bg-secondary rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 text-light" href="../home.html">Bebidas</a>
+                <div class="dropdown navbar-collapse">
+                    <a class="btn bg-secondary-subtle dropdown-toggle fs-4 0text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/icons8-carrinho-de-compras-30.png" alt=""> Nossos Produtos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="horti.html">Hortifrúti e Ovos</a></li>
+                        <li><a class="dropdown-item" href="limpeza.html">Produtos de Limpeza</a></li>
+                        <li><a class="dropdown-item" href="higiene.html">Higiene Pessoal</a></li>
+                        <li><a class="dropdown-item" href="alimentosbasicos.html">Alimentos Básicos</a></li>
+                        <li><a class="dropdown-item" href="cafelatinios.html">Café e Laticínios</a></li>
+                        <li><a class="dropdown-item" href="paesbiscoitos.html">Pães e Biscoitos</a></li>
+                        <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+    <!-- Meio -->
+    <div class="container-fluid">
+        <form action="">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="bg-success text-light border border-secondary">Cód.:</th>
+                            <th scope="col" class="bg-success text-light border border-secondary">Imagem Prod.:</th>
+                            <th scope="col" class="bg-success text-light border border-secondary">Descrição:</th>
+                            <th scope="col" class="bg-success text-light border border-secondary">Valor UND R$:</th>
+                            <th scope="col" class="bg-success text-light border border-secondary">QTD.:</th>
+                            <th scope="col" class="bg-success text-light border border-secondary">Subtotal R$:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row-sm" class="border border-secondary">1</th>
+                            <td class="border border-secondary"><img src="../img/refrigerante.png" alt="Refrigerante"></td>
+                            <td class="border border-secondary">
+                                <h4>Refrigerante</h4>
+                                <p>2 Litros</p>
+                            </td>
+                            <td class="border border-secondary"><input type="number" id="prodRefrigerante" readonly value="6.50"></td>
+                            <td class="border border-secondary"><input type="number" id="qtdRefrigerante" onchange="refrigeranteCalc(prodRefrigerante.value, qtdRefrigerante.value)"></td>
+                            <td class="border border-secondary"><input type="text" id="subRefrigerante" readonly placeholder="R$ -"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-secondary rounded">
+        <div class="row mb-3 text-center">
+            <div class="row text-center">
+                <div class="col-sm text-center text-light">
+                    <a href="bnits.com.br"><img src="../img/LOGO_BNITS.png" alt="" height="85px" class="img-button"
+                            width=""></a>
+                    <p>Criado por <a href="bnits.com.br" class="text-dark">BNITS Design</a></p>
+                    <p>Copyrights &copy; 2024.</p>
+                </div>
+                <div class="col-sm text-center">
+                    <h3 class="text-light">Contatos:</h3>
+                   
+                    <a href="https://wa.me/5511916798926" class="text-light">
+                        <p><img src="../img/what.png" alt="" width="20px">Whatsapp:(11)91679-8926</p>
+                    </a>
+                    <a href="mailto:igorsbueno010@gmail.com" class="text-light">
+                        <p><img src="../img/email.png" alt="" width="20px">E-mail: igorsbueno010@gmail.com</p>
+                    </a>
+                </div>
+                <div class="col-sm text-center">
+                    <h3 class="text-light">Siga-nos:</h3>
+                    <a href="https://www.instagram.com/bueno.igr/"><img src="../img/instagram.png" alt="" height="85px"
+                            class="img-button"></a>
+                </div>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
