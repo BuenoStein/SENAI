@@ -28,6 +28,7 @@ Esse Repositório tem o intuito de guardar as aulas que foram passadas para que 
 - CSS
 - PHP
 - SQL
+- MYSQL
 - BootsTrap
 - JavaScript
 
